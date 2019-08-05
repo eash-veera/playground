@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Active - Landing Page Concept</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <script src="" async defer></script>        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="temp"></div>
+        <div class="first-block"></div>
+        <div class="second-block"></div>
+        <div class="loader">
+            <ul>
+                <li>L</li>
+                <li>O</li>
+                <li>A</li>
+                <li>D</li>
+                <li>I</li>
+                <li>N</li>
+                <li>G</li>
+            </ul>
+        </div>
+        <div class="third-block"></div>
+        <div class="menu">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+        <div class="logo">
+            <span>Explore</span>
+        </div> 
+        <div class="content">
+            <div class="heading">
+                <span>Active</span>
+            </div>
+            <div class="desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id et voluptatibus 
+                    consequatur temporibus, nihil dolor. Sunt enim perferendis quisquam, molestiae dolorum, 
+                    omnis laboriosam eos iure porro commodi reprehenderit deserunt!</p>
+            </div>
+            <div class="link">
+                <button type="button">VISIT NOW</button>
+            </div>
+        </div>
+        <div class="img">
+            <img src="images/hero.jpg" alt="">
+        </div>
+        <div class="media">
+            <ul>
+                <li><ion-icon name="logo-facebook"></ion-icons></li>
+                <li><ion-icon name="logo-instagram"></ion-icons></li>
+                <li><ion-icon name="logo-twitter"></ion-icons></li>
+            </ul>
+        </div>
+        <div class="watch">
+            <ion-icon name="play"></ion-icon>
+        </div>
+
+        <script type="text/javascript">
+            
+            TweenMax.from(".logo", 1.6, {
+                delay:6.4,
+                opacity: 0,
+                y: 30,
+                ease: Expo.easeInout
+            });
+
+            TweenMax.from(".menu", 1.6, {
+                delay:6.5,
+                opacity: 0,
+                y: 30,
+                ease: Expo.easeInout
+            });
+
+            TweenMax.from(".heading", 1.6, {
+                delay:6.6,
+                opacity: 0,
+                y: 30,
+                ease: Expo.easeInout
+            });
+
+            TweenMax.from(".desc", 1.6, {
+                delay:6.7,
+                opacity: 0,
+                y: 30,
+                ease: Expo.easeInout
+            });
+
+            TweenMax.from("button", 1.6, {
+                delay:6.8,
+                opacity: 0,
+                y: 30,
+                ease: Expo.easeInout
+            });
+
+            TweenMax.from(".watch", 1.6, {
+                delay:6.9,
+                opacity: 0,
+                y: 30,
+                rotation: 90,
+                ease: Expo.easeInout
+            });
+
+            TweenMax.staggerFrom(".media ul li", 2, {
+                delay:7,
+                opacity: 0,
+                y: 40,
+                ease: Expo.easeInout
+            });
+
+        </script>
+    </body>
+</html>
